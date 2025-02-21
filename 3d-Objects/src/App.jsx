@@ -5,11 +5,11 @@ function App() {
     <div className="h-screen w-screen bg-gray-100">
       <Canvas camera={{ position: [1, 3, 3] }}>
         <group position={[-1, 0, 0]}>
-          <mesh position={[-1, 0, 0]}>
+          <mesh position={[-2, 0, 0]}  rotation={[-0.5, 0, 0]}  >
             <boxGeometry args={[2, 2, 2]} />
             <meshStandardMaterial color="hotpink" side={THREE.FrontSide} />
           </mesh>
-          <mesh position={[2, 0, 0]}>
+          <mesh position={[2, 0, 0]} scale={[1.2, 1.2, 1.2]}>
             <boxGeometry args={[2, 2, 2]} />
             <meshStandardMaterial color="hotpink" side={THREE.BackSide} />
           </mesh>

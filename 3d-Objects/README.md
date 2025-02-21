@@ -25,4 +25,9 @@
 *phong material is used for shiny surfaces, it has a color and it requires lighting*
 - example : metal and glass
 
+## Lighting
 
+- *directionalLight* : it is a directional lighting which lights up the scene from a single direction and it has color and intensity
+- *ambientLight* : this light, lights up the scene from all directions and it has color and intensity
+- *pointLight* : as name suggests, it is a point light which lights up the scene from a single point and it has color and intensity
+- *spotLight* : spot light is a light that is used to light up a specific area and it has color and intensity
