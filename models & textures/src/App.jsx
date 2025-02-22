@@ -2,17 +2,16 @@ import { Canvas } from '@react-three/fiber'
 import React from 'react'
 import { OrbitControls } from '@react-three/drei'
 import { Experience } from './components/Experience'
+import { Environment } from '@react-three/drei'
 const App = () => {
   return (
-
-    <Canvas>
+    
+    <Canvas camera={{position: [0, 0, 10], fov: 45}}>
       <OrbitControls />
-      {/* <ambientLight intensity={0.5} />
-      <directionalLight position={[3, 3, 3]} intensity={1} />
-      <directionalLight position={[-3, 3, 3]} intensity={1} /> */}
       <Experience />
+      <Environment preset="sunset" /> 
     </Canvas>
-
+    
   )
 }
 
