@@ -9,10 +9,10 @@ export const Experience = () => {
     // const dino = useFBX("models/Dino.fbx")
     return (
         <>
-        <ambientLight intensity={2} />
+        <ambientLight intensity={3} />
         {/* <primitive object={fish.scene} /> */}
         {/* <Gltf src="models/Fish.gltf" position={[0, -1, 0]} /> */}
-        <Fish position={[0, -1, 0]} />
+        <Fish position={[0, -2.5, 0]} scale={1.5} />
         {/* <primitive object={dino} scale={0.01} position={[-4, 0, 0]} /> */}
         </>
     )

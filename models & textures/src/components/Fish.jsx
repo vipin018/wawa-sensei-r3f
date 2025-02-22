@@ -23,7 +23,8 @@ export function Fish(props) {
         }
     });
     useEffect(() => {
-        actions[animation].play()
+        actions[animation].reset().fadeIn(1).play()
+        return () => actions[animation].fadeOut(1)
     }, [animation])
     return (
         <group ref={group} {...props} dispose={null}>
