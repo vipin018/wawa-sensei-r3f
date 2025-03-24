@@ -4,7 +4,9 @@ const Box = () => {
   return (
     <mesh>
       <boxGeometry args={[2, 2, 2]} />
-      <meshStandardMaterial />
+      <meshStandardMaterial
+      color="white"
+      />
     </mesh>
   )
 }
