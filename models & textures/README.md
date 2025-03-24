@@ -1,1 +1,0 @@
-- npx gltfjsx public/models/Fish.gltf -o src/components/Fish.jsx -r public
