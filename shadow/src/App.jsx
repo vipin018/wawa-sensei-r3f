@@ -8,7 +8,7 @@ import { ContactShadows } from '@react-three/drei'
 const App = () => {
   return (
     <Canvas
-      // shadows
+      shadows
       style={{ height: '100vh', width: '100vw' }}
       camera={{ position: [3, 3, 5] }}
     >
