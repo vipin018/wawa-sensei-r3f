@@ -1,6 +1,6 @@
 import { Grid, OrbitControls } from "@react-three/drei";
 import { Player } from "./Player";
-
+import { RigidBody } from "@react-three/rapier";
 export const Experience = () => {
   return (
     <>
@@ -10,10 +10,15 @@ export const Experience = () => {
       <ambientLight intensity={0.5} />
       <Player />
 
+      <RigidBody
+      type="fixed"
+      friction={1}
+      >
       <mesh position-y={-0.251} receiveShadow>
         <boxGeometry args={[20, 0.5, 20]} />
         <meshStandardMaterial color="mediumpurple" />
-      </mesh>
+        </mesh>
+      </RigidBody>
       <Grid
         sectionSize={3}
         sectionColor={"white"}
