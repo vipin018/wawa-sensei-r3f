@@ -16,6 +16,7 @@ function App() {
           maxDistance={20}
         />
         <Environment preset="warehouse" />
+
       </Canvas>
     </>
   );
