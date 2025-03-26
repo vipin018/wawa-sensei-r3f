@@ -11,10 +11,15 @@ function App() {
           <ContactShadows opacity={0.32} blur={2} />
         </group>
         <OrbitControls
-          maxPolarAngle={Math.PI / 2}
-          minDistance={8}
-          maxDistance={20}
-        />
+  maxPolarAngle={Math.PI / 2.1} 
+  minDistance={5}
+  maxDistance={30}
+  enableZoom={true}
+  rotateSpeed={0.3}
+  minAzimuthAngle={-Math.PI / 6}
+  maxAzimuthAngle={Math.PI / 6}
+  
+/>
         <Environment preset="warehouse" />
 
       </Canvas>
